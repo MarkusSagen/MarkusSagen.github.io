@@ -1,3 +1,10 @@
+<script>
+  window.onload = function() {
+    // similar behavior as an HTTP redirect
+    window.location.replace("markussagen.github.io/home");
+}
+</script>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
