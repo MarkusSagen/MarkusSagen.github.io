@@ -8,3 +8,5 @@ Generated as a static website with Zola (Hugo alternative in Rust)
 ```sh
 just serve
 ```
+
+
