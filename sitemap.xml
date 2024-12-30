@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://markussagen.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://markussagen.github.io/about/</loc>
+    </url>
+    <url>
+        <loc>https://markussagen.github.io/blog/</loc>
+    </url>
+    <url>
+        <loc>https://markussagen.github.io/blog/blog-with-image/</loc>
+        <lastmod>2021-10-01</lastmod>
+    </url>
+    <url>
+        <loc>https://markussagen.github.io/blog/no-summary/</loc>
+        <lastmod>2021-10-04</lastmod>
+    </url>
+    <url>
+        <loc>https://markussagen.github.io/blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://markussagen.github.io/categories/</loc>
+    </url>
+    <url>
+        <loc>https://markussagen.github.io/projects/</loc>
+    </url>
+    <url>
+        <loc>https://markussagen.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://markussagen.github.io/tags/other/</loc>
+    </url>
+</urlset>
