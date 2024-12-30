@@ -1,0 +1,176 @@
+# The URL the site will be built for
+base_url = "https://markussagen.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "papaya"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# # The theme author info: you!
+# [author]
+# name = "Justin Tennant"
+# homepage = "https://justintennant.me"
+                                                            
+#############################################################
+#                                                           #
+#   ~~~~~~~~~~      Language Section START      ~~~~~~~~~~  #
+#                                                           #
+#############################################################
+[languages]
+
+[languages.en]
+title = "SagenOS"
+description = "Homepage"
+# The taxonomies to be rendered for the site and their configuration of the default languages
+taxonomies = [
+    { name = "tags", feed = true, lang = "en" },
+    { name = "categories", feed = true, lang = "en" },
+]
+
+[languages.en.translations]
+projects = "Projects"
+blog = "Blog"
+about = "About"
+recent_projects = "Recent Projects"
+more_projects = "More Projects"
+recent_blog_posts = "Recent Blog Posts"
+more_blog_posts = "More blog posts"
+tag = "Tag"
+tags = "Tags"
+to_all_tags = "To all tags"
+category = "Category"
+categories = "Categories"
+to_all_categories = "To all categories"
+view_by = "View by"
+other = "Other"
+minute = "min"
+prev_page = "To newer posts"
+next_page = "To older posts"
+# Customize your post date format. See: https://tera.netlify.app/docs/#date
+date_format = "%B %e, %Y"
+
+# [languages.sv]
+# title = "SagenOS"
+# description = "Hemsida"
+# generate_feed = true
+# feed_filename = "atom.xml"
+# # The taxonomies to be rendered for the site and their configuration of the default languages
+# taxonomies = [
+#     { name = "tags", feed = true, lang = "en" },
+#     { name = "categories", feed = true, lang = "en" },
+# ]
+#
+# [languages.sv.translations]
+# projects = "Projects"
+# blog = "Blog"
+# about = "About"
+# recent_projects = "Recent Projects"
+# more_projects = "More Projects"
+# recent_blog_posts = "Recent Blog Posts"
+# more_blog_posts = "More blog posts"
+# tag = "Tag"
+# tags = "Tags"
+# to_all_tags = "To all tags"
+# category = "Category"
+# categories = "Categories"
+# to_all_categories = "To all categories"
+# view_by = "View by"
+# other = "Other"
+# minute = "min"
+# prev_page = "To newer posts"
+# next_page = "To older posts"
+# # Customize your post date format. See: https://tera.netlify.app/docs/#date
+# date_format = "%B %e, %Y"
+#
+# [languages.zh]
+# title = "帕帕雅"
+# description = "一个清新的 Zola 博客与项目模板"
+# base_url = "https://justintennant.me/papaya/zh"
+# generate_feed = true
+# # The taxonomies to be rendered for the site and their configuration of the default languages
+# taxonomies = [
+#     { name = "tags", feed = true, lang = "zh" },
+#     { name = "categories", feed = true, lang = "zh" },
+# ]
+#
+# [languages.zh.translations]
+# projects = "项目"
+# blog = "博文"
+# about = "关于"
+# recent_projects = "近期项目"
+# more_projects = "更多项目"
+# recent_blog_posts = "近期博文"
+# more_blog_posts = "更多博文"
+# tag = "标签"
+# tags = "所有标签"
+# to_all_tags = "所有标签"
+# category = "类别"
+# categories = "所有类别"
+# to_all_categories = "所有类别"
+# view_by = "查看方式"
+# other = "其他"
+# minute = "分钟"
+# prev_page = "上一页"
+# next_page = "下一页"
+# # Customize your post date format. See: https://tera.netlify.app/docs/#date
+# date_format = "%Y 年 %m 月 %d 日"
+
+#############################################################
+#                                                           #
+#   ~~~~~~~~~~      Extra Section START         ~~~~~~~~~~  #
+#                                                           #
+#############################################################
+
+[extra]
+# Put all your custom variables here
+# Development environment. Used by the page macros to load remote content only when in "prod" mode
+env = "ZOLA_ENV"
+
+# Color theme mode. Options: light, dark, auto (automatically switch depending on OS/user agent settings)
+color_mode = "auto"
+#
+# List of Papaya navigational menu items. Used to construct the navigation bar. See the README for item schema.
+menu_items = [
+    { name = "projects", url = "$LANG_BASE_URL/projects", show_recent = true, recent_items = 3, recent_trans_key = "recent_projects", more_trans_key = "more_projects" },
+    { name = "blog", url = "$LANG_BASE_URL/blog", show_recent = true, recent_items = 3, recent_trans_key = "recent_blog_posts", more_trans_key = "more_blog_posts" },
+    # tag is not a zola section, it's just a link.
+    { name = "tags", url = "$LANG_BASE_URL/tags" },
+    { name = "about", url = "$LANG_BASE_URL/about", show_recent = false },
+]
+
+[extra.images]
+# Width defined in pixels
+max_width = 1880
+
+ # Open Graph Protocol objects. See: https://ogp.me/
+ [extra.ogp]
+ locale = "en_US"
+ first_name = "Markus"
+ last_name = "Sagen"
+ gender = ""
+ username = "MarkusSagen"
+
+ # Footer social links; full options listed in macros/social.html
+ [extra.social]
+ email = "markus.john.sagen@gmail.com"
+ github = "MarkusSagen"
+ linkedin = "markussagen"
+ twitter = ""
+ zhihu = ""
+ weibo = ""
+ bilibili = ""
+ other = [
+     # { name = "BTC", font_awesome = "fa-brands fa-btc", url = "https://www.bitcoin.com/" }
+ ]
+
+# CDN links
+[extra.cdn]
+font_awesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
